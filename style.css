@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('peterArtboard_1.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(51, 51, 51, 0.9); /* Slight transparency */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 20px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.discord-profile {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join{
+    align-items: center;
+    align-content: center;
+}
+.join-button:hover {
+    background-color: #677bc4; /* Darker shade of Discord brand color on hover */
+    align-items: center;
+}
+
+.join-button {
+    padding: 12px 24px;
+    background-color: #7289da; /* Discord brand color */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    align-content: center;
+}
+.member-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.member-card-holder{
+    display: flex;
+    flex-direction: row;
+    display: flexbox;
+    grid-template-columns: auto;
+}
+.member-card h3 {
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.member-card .title {
+    color: #4CAF50;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: rgb(135, 205, 158);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 8rem;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.head-member{
+    text-align: center;
+}
+.card h3 {
+    margin: 0.5rem 0;
+}
+
+.profile-details {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.profile-pic-large {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+.social-links a:hover {
+    text-decoration: none;
+    color: #2e7d32;
+}
+.back{
+    
+    height: 40px;
+    width:298 px;
+}
+img{
+
+    height: 40px;
+    width:298 px;
+}
+
+.contact{
+    text-align: center;
+font-size: larger;
+}
+
+.insta{
+    display: flex;
+    flex-direction: row;
+    display: flexbox;
+    grid-template-columns: auto;
+}
+.box-insta{
+    background-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+   
+}
+.black{
+    color: #333;
+    font-style: bold;
+}
