@@ -1,3 +1,36 @@
+<?php
+$servername = "localhost";
+$username = "root"; // Replace with your database username
+$password = ""; // Replace with your database password
+$dbname = "form_db";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $full_name = $_POST['full_name'];
+    $last_name = $_POST['last_name'];
+    $email = $_POST['email'];
+
+    // Prepare and bind
+    $stmt = $conn->prepare("INSERT INTO users (full_name, last_name, email) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $full_name, $last_name, $email);
+
+    if ($stmt->execute()) {
+        echo "<script>alert('Record added successfully');</script>";
+    } else {
+        echo "<script>alert('Error adding record: " . $stmt->error . "');</script>";
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,13 +90,14 @@
   
       <div class="form-container">
         <h2>Send us your information</h2>
-        <form action="../submit.php" method="post">
-          <input type="text" name="full_name" placeholder="Full-Name" required>
-          <input type="text" name="last_name" placeholder="Last-Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="submit" value="Submit">
+        <form action="submit.php" method="post">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="submit" value="Submit">
       </form>
     </div>
  
   </body>
 </html>
+
